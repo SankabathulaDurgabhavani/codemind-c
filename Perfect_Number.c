@@ -10,12 +10,11 @@ int main()
           s=s+i;
       }
     }
-    if(n==s){
+    if(s==n)
+    {
         printf("True");
     }
-    else
-    {
-      printf("False");  
+    else{
+        printf("False");
     }
-    
 }
