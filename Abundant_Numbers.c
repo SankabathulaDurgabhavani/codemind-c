@@ -7,7 +7,7 @@ int main()
     {
         if(n%i==0)
         {
-          s=s+i;  
+            s=s+i;
         }
     }
     if(s>n)
