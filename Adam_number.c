@@ -1,7 +1,7 @@
 #include<stdio.h>
 int reverse(int n)
 {
-    int re,r=0;
+    int r=0,re;
     while(n!=0)
     {
         re=n%10;
@@ -12,12 +12,12 @@ int reverse(int n)
 }
 int main()
 {
-    int n,i,rs,sr;
+    int i,sr,rs,n;
     scanf("%d",&n);
     i=n*n;
-    rs=reverse(n);
-    sr=rs*rs;
-    if(i==reverse(sr))
+    sr=reverse(n);
+    rs=sr*sr;
+    if(i==reverse(rs))
     {
         printf("True");
     }
