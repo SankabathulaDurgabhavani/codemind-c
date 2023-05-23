@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int n,m,i,g;
-    scanf("%d%d",&n,&m);
-    for(i=1;i<=n && i<=m;i++)
+    int a,b,g,i;
+    scanf("%d%d",&a,&b);
+    for(i=1; i<=a && i<=b;i++)
     {
-        if(n%i==0 && m%i==0)
+        if(a%i==0 && b%i==0)
         {
             g=i;
         }
