@@ -1,16 +1,17 @@
 #include<stdio.h>
 int main()
 {
-    int n,t=0;
+    int n,t;
     scanf("%d",&n);
-    int i,a[n];
+    int i;
+    int a[n];
     for(i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
     }
     for(i=0;i<n;i++)
     {
-        if(i%2!=0 && a[i]%2==0)
+        if(a[i]%2!=0 && i%2==0)
         {
             t=1;
             break;
@@ -24,4 +25,5 @@ int main()
     {
         printf("True");
     }
+    
 }
