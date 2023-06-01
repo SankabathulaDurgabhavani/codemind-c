@@ -1,8 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,t=0;
+    int n,t;
     scanf("%d",&n);
+    int i;
     int a[n];
     for(i=0;i<n;i++)
     {
@@ -10,20 +11,19 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-    if(i%2==0 && a[i]%2!=0)
-    {
-        t=1;
-        break;
-        
+        if(a[i]%2!=0 && i%2==0)
+        {
+            t=1;
+            break;
+        }
     }
-    }
-    if(t==0)
-    {
-        printf("True");
-    }
-    else
+    if(t==1)
     {
         printf("False");
     }
-   
+    else
+    {
+        printf("True");
+    }
+    
 }
