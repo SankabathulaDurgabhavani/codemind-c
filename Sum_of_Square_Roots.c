@@ -2,13 +2,12 @@
 #include<math.h>
 int main()
 {
-    int m,n,i;
-    float s=0,t;
-    scanf("%d%d",&m,&n);
-    for(i=m;i<=n;i++)
+    int a,b,i;
+    float s=0;
+    scanf("%d%d",&a,&b);
+    for(i=a;i<=b;i++)
     {
-     t=sqrt(i);
-     s=s+t;
+        s=s+sqrt(i);
     }
-    printf("%0.2f",s);
+    printf("%.2f",s);
 }
