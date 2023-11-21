@@ -1,13 +1,15 @@
-#include<stdio.h>
-#include<math.h>
+#include<bits/stdc++.h>
+using namespace std;
 int main()
 {
-    int n,s,sum,a;
-    scanf("%d",&n);
-    s=(n*(n+1)*(2*n+1))/6;
-    sum=((n*(n+1))/2)*((n*(n+1))/2);
-    a=sum-s;
+    int n,s=0,c=0;
+    cin>>n;
+    for(int i=1;i<=n;i++)
     {
-        printf("%d",a);
+        s=s+(i*i);
+        c=c+i;
     }
+    int sum=c*c;
+    int d=abs(sum-s);
+   cout<<d;
 }
