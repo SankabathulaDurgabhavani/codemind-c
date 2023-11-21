@@ -21,17 +21,13 @@ int checkAutomorphic(int num){
 
 int main ()
 {
-    int num, square = num * num ;
+    int num;
     scanf("%d",&num);
+   int  square = num * num ;
     
     if(checkAutomorphic(num))
-    {
         printf("Automorphic Number");
-    }
     else
-    {
         printf("Not an Automorphic Number");
-    }
-    
 
 }
