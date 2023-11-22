@@ -3,11 +3,10 @@ int main()
 {
     int a,b;
     scanf("%d%d",&a,&b);
-    a=a+b;
-    b=a-b;
-    a=a-b;
+    int c=a;
+    a=b;
+    b=c;
     printf("%d
-",a);
-    printf("%d",b);
-
+%d",a,b);
+    
 }
